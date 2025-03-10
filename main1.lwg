@@ -1,0 +1,22 @@
+@ Example Number
+@ start Program 
+#ADD "I/O"
+
+start
+
+@ Declare Variable
+INT num1
+INT num2
+FLOAT sum
+ARYFLOAT name, 23
+ARYCHAR name, 10
+@ code
+WRITE "Lingwar Programming Language"
+READ "Enter A number ? ", num1;
+READ "Enter a Number ? ", num2;
+
+@ maths
+sum = num1 + num2;
+WRITE "SUM"
+WRITE sum
+END

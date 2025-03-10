@@ -1,0 +1,23 @@
+#ADD I/O
+
+FUNC [int] add(int a, int b)
+RETURN [a+b]
+ENDFUNC
+
+
+START
+ARYINT text ,
+int value
+CALLFUNC [add] (4,2) => value
+INT temp
+text = {2,4,5,6,1};
+FOR x (0, 5)
+FOR G (0, 5)
+IF (text[g] < text[g+1])
+temp = text[g] + text[g+1]
+text[g] = temp - text[g]
+text[g+1] = temp -text[g+1]
+ENDIF
+ENDFOR
+ENDFOR
+END
